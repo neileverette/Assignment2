@@ -18,7 +18,11 @@ public class CS106ATiles extends GraphicsProgram {
 	public void run() {
 		/* You fill this in. */
 		
-		add (new GLabel("Hello World", 100, 75));
+		println("This adds two numbers");
+		int n1 = readInt("Enter first number");
+		int n2 = readInt("Enter second number");
+		int n3 = n1 + n2;
+		println("The total is " + n3 + ".");
 	}
 }
 
