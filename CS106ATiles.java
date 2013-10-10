@@ -19,7 +19,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		/* You fill this in. */
 		
 		GLabel label = new GLabel("Hello World", 100,75);
-		label.setFont("Roboto-Thin-36");
+		label.setFont("Roboto-Bold-36");
 		label.setColor(Color.RED);
 		
 		GRect rectangle = new GRect(10, 10, 100, 50);
