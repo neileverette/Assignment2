@@ -20,7 +20,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		GLabel label = new GLabel("Hello World", 100,75);
 		label.setFont("Roboto-36");
-		label.setColor(Color.Red);
+		label.setColor(Color.RED);
 		
 		add(label);
 	}
