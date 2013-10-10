@@ -22,6 +22,9 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		label.setFont("Roboto-36");
 		label.setColor(Color.RED);
 		
+		GRect rectangle = new GRect(10, 10, 100, 50);
+		
+		add(rectangle);
 		add(label);
 	}
 }
