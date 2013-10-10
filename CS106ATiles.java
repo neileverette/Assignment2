@@ -25,6 +25,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		GRect rectangle = new GRect(10, 10, 100, 50);
 		
 		GOval oval = new GOval(100, 100, 100, 50);
+		oval.setFillColor(Color.RED);
 		
 		add(rectangle);
 		add(label);
