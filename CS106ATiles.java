@@ -10,7 +10,7 @@
 import acm.program.*;
 import java.awt.*;
 
-public class CS106ATiles extends GraphicsProgram {
+public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
 	
 	/** Amount of space (in pixels) between tiles */
 	private static final int TILE_SPACE = 20;
