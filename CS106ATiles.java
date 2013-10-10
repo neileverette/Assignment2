@@ -19,10 +19,7 @@ public class CS106ATiles extends GraphicsProgram {
 		/* You fill this in. */
 		
 		println("This adds two numbers");
-		int n1 = readInt("Enter first number");
-		int n2 = readInt("Enter second number");
-		int n3 = n1 + n2;
-		println("The total is " + n3 + ".");
+
 	}
 }
 
