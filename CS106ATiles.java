@@ -17,6 +17,8 @@ public class CS106ATiles extends GraphicsProgram {
 
 	public void run() {
 		/* You fill this in. */
+		
+		add (new GLabel("Hello World", 100, 75));
 	}
 }
 
