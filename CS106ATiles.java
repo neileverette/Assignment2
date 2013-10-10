@@ -28,6 +28,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		add(rectangle);
 		add(label);
+		add(oval);
 	}
 }
 
