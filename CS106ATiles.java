@@ -18,6 +18,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 	public void run() {
 
 		// This sets how high to 
+		int maximumNumber = 10000;
 		
 		// Variables need for the current number
 		int number1=0;
@@ -25,7 +26,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 		int number3=0;
 		
 		// Caluculate the 
-		while (number3<500){
+		while (number3<maximumNumber){
 			// Add numbers 1 and 2, set them to be the value of number 3
 			number3 = number1 + number2;
 			
