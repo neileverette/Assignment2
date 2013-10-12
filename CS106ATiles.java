@@ -17,7 +17,13 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 
 	public void run() {
 		
-		GRect myRect = new GRect(100,100,200,300);
+		int faceWidth = 200;
+		int faceHeight = 300;
+		
+		int faceXPosition = 100;
+		int faceYPosition = 100;
+		
+		GRect myRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
 		myRect.setFilled(true);
 		myRect.setColor(Color.gray);
 		add(myRect);
