@@ -18,7 +18,8 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run() {
 		
 		GRect myRect = new GRect(10,10,50,50);
-		
+		myRect.setFilled(true);
+		myRect.setColor(Color.gray);
 		add(myRect);
 
 	
