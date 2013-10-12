@@ -38,7 +38,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		faceRect.setColor(Color.gray);
 		
 		// Mouth
-		GRect mouthRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
+		GRect mouthRect = new GRect(mouthXPosition,mouthYPosition,mouthWidth,moughHeight);
 		mouthRect.setFilled(true);
 		mouthRect.setColor(Color.red);
 		
