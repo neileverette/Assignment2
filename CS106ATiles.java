@@ -21,7 +21,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int faceHeight = 300;
 		
 		int faceXPosition = getWidth()/2 - faceWidth/2;
-		int faceYPosition = 100;
+		int faceYPosition = getHeight()/2 - faceHeight/2;
 		
 		GRect myRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
 		myRect.setFilled(true);
