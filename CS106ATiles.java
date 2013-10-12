@@ -20,7 +20,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int faceWidth = 200;
 		int faceHeight = 300;
 		
-		int faceXPosition = getWidth()-faceWidth - faceWidth/2;
+		int faceXPosition = getWidth()/2 - faceWidth/2;
 		int faceYPosition = 100;
 		
 		GRect myRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
