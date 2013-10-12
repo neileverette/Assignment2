@@ -25,7 +25,12 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 		int number2=1;
 		int number3=0;
 		
-		// Caluculate the 
+		
+		// Print the intial values
+		println(number1);
+		println(number2);
+		
+		// Caluculate the fib sequence
 		while (number3<maximumNumber){
 			// Add numbers 1 and 2, set them to be the value of number 3
 			number3 = number1 + number2;
