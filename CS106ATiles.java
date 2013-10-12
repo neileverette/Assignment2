@@ -18,7 +18,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run() {
 		
 		// Dimensions for the face
-		int faceWidth = 200;
+		int faceWidth = 100;
 		int faceHeight = 350;
 		
 		int faceXPosition = getWidth()/2 - faceWidth/2;
