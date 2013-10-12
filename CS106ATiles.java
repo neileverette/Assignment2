@@ -28,7 +28,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int mouthWidth = faceWidth/2;
 		int moughHeight = faceWidth/6;
 		
-		int mouthXPosition = getWidth()/2;
+		int mouthXPosition = getWidth()/2-mouthWidth/2;
 		int mouthYPosition = getHeight()/2;
 		
 		
