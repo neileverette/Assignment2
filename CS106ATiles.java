@@ -60,7 +60,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Graphics for the eyes
 		// 
 		// Size of the eye
-		int eyeSize=20;
+		int eyeSize=40;
 		
 		// Position of eye
 		// Height of the eyes
@@ -69,14 +69,14 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Position of left eye
 		int leftXEye = 100;
 		
-		GOval eyeLeft = new GOval(eyeHeight,leftXEye,eyeSize,eyeSize);
+		GOval eyeLeft = new GOval(leftXEye,eyeHeight, eyeSize,eyeSize);
 		eyeLeft.setFilled(true);
 		eyeLeft.setColor(Color.red);
 		
 		// Position of right eye
 		int rightXEye = 400;
 		
-		GOval eyeRight = new GOval(eyeHeight,rightXEye,eyeSize,eyeSize);
+		GOval eyeRight = new GOval(rightXEye, eyeHeight,eyeSize,eyeSize);
 		eyeRight.setFilled(true);
 		eyeRight.setColor(Color.red);
 		
