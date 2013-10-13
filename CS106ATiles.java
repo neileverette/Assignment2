@@ -72,7 +72,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		eyeLeft.setColor(Color.red);
 		
 		// Position of right eye
-		int rightXEye = getWidth()/2+faceWidth/4;
+		int rightXEye = getWidth()/2+faceWidth/4-eyeSize;
 		
 		GOval eyeRight = new GOval(rightXEye, eyeHeight,eyeSize,eyeSize);
 		eyeRight.setFilled(true);
