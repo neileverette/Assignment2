@@ -21,6 +21,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 		
 		while(val != SENTINEL){
 			total += val;
+			println(total);
 			val = readInt("Enter a value: ");
 		}
 		println("The total is " + total + ".");	
