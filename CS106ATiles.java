@@ -15,18 +15,14 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 //	/** Amount of space (in pixels) between tiles */
 //	private static final int TILE_SPACE = 20;
 	
-	
+	// Constants that are the dimensions for the face
 	private static final int faceWidth=250;
 	private static final int faceHeight=400;
 
 	public void run() {
 		
-		// Dimensions for the face
-		//int faceWidth = 250;
-		//int faceHeight = 400;
-		
-		int faceXPosition = getWidth()/2 - faceWidth/2; // Get the 
-		int faceYPosition = getHeight()/2 - faceHeight/2;
+		int faceXPosition = getWidth()/2 - faceWidth/2; // Centers the face on the X
+		int faceYPosition = getHeight()/2 - faceHeight/2; // Centers the face on the Y
 		
 		// Dimensions for the mouth
 		int mouthWidth = faceWidth/2; // Set the mouth to be 1/2 of the overall face width
