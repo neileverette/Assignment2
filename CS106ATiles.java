@@ -62,7 +62,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Position of eye
 		// Height of the eyes
-		int eyeHeight = getHeight()/2-faceHeight/2;
+		int eyeHeight = getHeight()/2-faceHeight/4;
 		
 		// Position of left eye
 		int leftXEye = 100;
