@@ -55,16 +55,14 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		GRect oneHalfRect = new GRect(faceXPosition,oneHalfYPosition,faceWidth,faceHeight/4);
 		oneHalfRect.setFilled(true);
 		oneHalfRect.setColor(Color.LIGHT_GRAY);
-		
-		
+			
 		// Graphics for the eyes
-		// 
-		// Size of the eye
+		// Size of the eyes
 		int eyeSize=40;
 		
 		// Position of eye
 		// Height of the eyes
-		int eyeHeight = 100;
+		int eyeHeight = getHeight()/2;
 		
 		// Position of left eye
 		int leftXEye = 100;
