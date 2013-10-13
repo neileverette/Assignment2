@@ -65,7 +65,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int eyeHeight = getHeight()/2-faceHeight/4;
 		
 		// Position of left eye
-		int leftXEye = getWidth()/2-faceWidth/2;
+		int leftXEye = getWidth()/2-faceWidth/4;
 		
 		GOval eyeLeft = new GOval(leftXEye,eyeHeight, eyeSize,eyeSize);
 		eyeLeft.setFilled(true);
