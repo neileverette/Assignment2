@@ -49,16 +49,19 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		oneQuarterRect.setFilled(true);
 		oneQuarterRect.setColor(Color.LIGHT_GRAY);
 		
+		// 1/2 Mark row
+		int oneHalfYPosition = getHeight()/2;
 		
+		GRect oneHalfRect = new GRect(faceXPosition,oneHalfYPosition,faceWidth,faceHeight/4);
+		oneHalfRect.setFilled(true);
+		oneHalfRect.setColor(Color.LIGHT_GRAY);
 		
 		
 		// Add the elements to the screen
 		add(faceRect);
-		add(mouthRect);
 		add(oneQuarterRect);
-
-	
-		
+		add(oneHalfRect);
+		add(mouthRect);
 	}
 }
 
