@@ -28,16 +28,16 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int mouthWidth = faceWidth/2; // Set the mouth to be 1/2 of the overall face width
 		int mouthHeight = faceWidth/6; // Set the height of the mouth to be 1/6 of the overall face height
 		
+		// Coordinates for the mouth
 		int mouthXPosition = getWidth()/2-mouthWidth/2;
-		int mouthYPosition = getHeight()/2+ faceHeight/8 - mouthHeight/2;
+		int mouthYPosition = getHeight()/2+ faceHeight/8;
 		
-		
-		// Face
+		// Graphic for the face
 		GRect faceRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
 		faceRect.setFilled(true);
 		faceRect.setColor(Color.gray);
 		
-		// Mouth
+		// Graphic for the mouth
 		GRect mouthRect = new GRect(mouthXPosition,mouthYPosition,mouthWidth,mouthHeight);
 		mouthRect.setFilled(true);
 		mouthRect.setColor(Color.red);
