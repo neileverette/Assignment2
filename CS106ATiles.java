@@ -56,6 +56,13 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		oneHalfRect.setFilled(true);
 		oneHalfRect.setColor(Color.LIGHT_GRAY);
 		
+		
+		// Graphics for the eyes
+		// 
+		GOval eyeLeft = new GOval(faceXPosition,faceYPosition,faceWidth,faceHeight);
+		eyeLeft.setFilled(true);
+		eyeLeft.setColor(Color.red);
+		
 		// Add the elements to the screen
 		add(faceRect);
 		add(oneQuarterRect);
