@@ -68,6 +68,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		add(oneQuarterRect);
 		add(oneHalfRect);
 		add(mouthRect);
+		add(eyeLeft);
 	}
 }
 
