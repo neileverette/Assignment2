@@ -29,7 +29,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int mouthHeight = faceWidth/6; // Set the height of the mouth to be 1/6 of the overall face height
 		
 		int mouthXPosition = getWidth()/2-mouthWidth/2;
-		int mouthYPosition = getHeight()/2+faceHeight/2 ;
+		int mouthYPosition = getHeight()/2+faceHeight/4 ;
 		
 		
 		// Face
@@ -55,7 +55,6 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		GRect oneHalfRect = new GRect(faceXPosition,oneHalfYPosition,faceWidth,faceHeight/4);
 		oneHalfRect.setFilled(true);
 		oneHalfRect.setColor(Color.LIGHT_GRAY);
-		
 		
 		// Add the elements to the screen
 		add(faceRect);
