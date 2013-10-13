@@ -30,7 +30,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Coordinates for the mouth
 		int mouthXPosition = getWidth()/2-mouthWidth/2;
-		int mouthYPosition = getHeight()/2+ faceHeight/8;
+		int mouthYPosition = getHeight()/2+ faceHeight/4;
 		
 		// Graphic for the face
 		GRect faceRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
