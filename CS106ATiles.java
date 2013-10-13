@@ -59,7 +59,10 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Graphics for the eyes
 		// 
-		GOval eyeLeft = new GOval(faceXPosition,faceYPosition,faceWidth,faceHeight);
+		// Size of the eye
+		int eyeSize=20;
+		
+		GOval eyeLeft = new GOval(faceXPosition,faceYPosition,eyeSize,eyeSize);
 		eyeLeft.setFilled(true);
 		eyeLeft.setColor(Color.red);
 		
