@@ -80,8 +80,8 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Add the elements to the screen
 		add(faceRect);
-		add(oneQuarterRect);
-		add(oneHalfRect);
+		//add(oneQuarterRect);
+		//add(oneHalfRect);
 		add(mouthRect);
 		add(eyeLeft);
 		add(eyeRight);
