@@ -16,8 +16,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	public void run(){
 		
-		int total =0;
-		
+		int total = 0;
 		int val = readInt("Enter a value: ");
 		
 		while(val != SENTINEL){
