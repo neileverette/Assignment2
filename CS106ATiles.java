@@ -53,9 +53,9 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		
 		// Add the elements to the screen
-		add(oneQuarterRect);
 		add(faceRect);
 		add(mouthRect);
+		add(oneQuarterRect);
 
 	
 		
