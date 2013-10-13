@@ -11,80 +11,20 @@ import acm.program.*;
 import java.awt.*;
 
 public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
-	
-//	/** Amount of space (in pixels) between tiles */
-//	private static final int TILE_SPACE = 20;
-	
-	// Constants that are the dimensions for the face
-	private static final int faceWidth=250;
-	private static final int faceHeight=400;
 
-	public void run() {
+	private static final int SENTINEL = 0;
+	
+	public void run(){
 		
-		int faceXPosition = getWidth()/2 - faceWidth/2; // Centers the face on the X
-		int faceYPosition = getHeight()/2 - faceHeight/2; // Centers the face on the Y
+		int total =0;
 		
-		// Dimensions for the mouth
-		int mouthWidth = faceWidth/2; // Set the mouth to be 1/2 of the overall face width
-		int mouthHeight = faceWidth/6; // Set the height of the mouth to be 1/6 of the overall face height
+		int val = readInt("Enter a value: ");
 		
-		// Coordinates for the mouth
-		int mouthXPosition = getWidth()/2-mouthWidth/2;
-		int mouthYPosition = getHeight()/2+ faceHeight/4;
-		
-		// Graphic for the face
-		GRect faceRect = new GRect(faceXPosition,faceYPosition,faceWidth,faceHeight);
-		faceRect.setFilled(true);
-		faceRect.setColor(Color.gray);
-		
-		// Graphic for the mouth
-		GRect mouthRect = new GRect(mouthXPosition,mouthYPosition,mouthWidth,mouthHeight);
-		mouthRect.setFilled(true);
-		mouthRect.setColor(Color.white);
-		
-		// 1/4 Mark row
-		int oneQuarterYPosition = getHeight()/2 - faceHeight/2 ;
-		
-		GRect oneQuarterRect = new GRect(faceXPosition,oneQuarterYPosition,faceWidth,faceHeight/4);
-		oneQuarterRect.setFilled(true);
-		oneQuarterRect.setColor(Color.LIGHT_GRAY);
-		
-		// 1/2 Mark row
-		int oneHalfYPosition = getHeight()/2;
-		
-		GRect oneHalfRect = new GRect(faceXPosition,oneHalfYPosition,faceWidth,faceHeight/4);
-		oneHalfRect.setFilled(true);
-		oneHalfRect.setColor(Color.LIGHT_GRAY);
-			
-		// Graphics for the eyes
-		// Size of the eyes
-		int eyeSize=40;
-		
-		// Position of eye
-		// Height of the eyes
-		int eyeHeight = getHeight()/2-faceHeight/4;
-		
-		// Position of left eye
-		int leftXEye = getWidth()/2-faceWidth/4;
-		
-		GOval eyeLeft = new GOval(leftXEye,eyeHeight, eyeSize,eyeSize);
-		eyeLeft.setFilled(true);
-		eyeLeft.setColor(Color.yellow);
-		
-		// Position of right eye
-		int rightXEye = getWidth()/2+faceWidth/4-eyeSize;
-		
-		GOval eyeRight = new GOval(rightXEye, eyeHeight,eyeSize,eyeSize);
-		eyeRight.setFilled(true);
-		eyeRight.setColor(Color.yellow);
-		
-		// Add the elements to the screen
-		add(faceRect);
-		//add(oneQuarterRect);
-		//add(oneHalfRect);
-		add(mouthRect);
-		add(eyeLeft);
-		add(eyeRight);
+		while(val != SENTINEL){
+			total += val;
+			val = readInt("Enter a value: ");
+		}
+		println("The total is " + total + ".");	
 	}
 }
 
