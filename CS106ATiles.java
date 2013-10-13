@@ -46,7 +46,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int oneQuarterYPosition = getHeight()/2 ;
 		
 		
-		GRect oneQuarterRect = new GRect(faceXPosition,oneQuarterYPosition,faceWidth,faceHeight);
+		GRect oneQuarterRect = new GRect(faceXPosition,200,faceWidth,faceHeight);
 		oneQuarterRect.setFilled(true);
 		oneQuarterRect.setColor(Color.LIGHT_GRAY);
 		
