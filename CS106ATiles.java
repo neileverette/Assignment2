@@ -42,6 +42,14 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		mouthRect.setFilled(true);
 		mouthRect.setColor(Color.red);
 		
+		// 1/4 Mark
+		int oneQuarterYPosition = getHeight()/2 ;
+		
+		
+		GRect OneQuarterRect = new GRect(faceXPosition,oneQuarterYPosition,faceWidth,faceHeight);
+		OneQuarterRect.setFilled(true);
+		OneQuarterRect.setColor(Color.LIGHT_GRAY);
+		
 		
 		
 		
