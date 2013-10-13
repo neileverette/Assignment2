@@ -69,14 +69,14 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		GOval eyeLeft = new GOval(leftXEye,eyeHeight, eyeSize,eyeSize);
 		eyeLeft.setFilled(true);
-		eyeLeft.setColor(Color.red);
+		eyeLeft.setColor(Color.yellow);
 		
 		// Position of right eye
 		int rightXEye = getWidth()/2+faceWidth/4-eyeSize;
 		
 		GOval eyeRight = new GOval(rightXEye, eyeHeight,eyeSize,eyeSize);
 		eyeRight.setFilled(true);
-		eyeRight.setColor(Color.red);
+		eyeRight.setColor(Color.white);
 		
 		// Add the elements to the screen
 		add(faceRect);
