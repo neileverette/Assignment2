@@ -40,7 +40,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Graphic for the mouth
 		GRect mouthRect = new GRect(mouthXPosition,mouthYPosition,mouthWidth,mouthHeight);
 		mouthRect.setFilled(true);
-		mouthRect.setColor(Color.red);
+		mouthRect.setColor(Color.white);
 		
 		// 1/4 Mark row
 		int oneQuarterYPosition = getHeight()/2 - faceHeight/2 ;
@@ -76,7 +76,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		GOval eyeRight = new GOval(rightXEye, eyeHeight,eyeSize,eyeSize);
 		eyeRight.setFilled(true);
-		eyeRight.setColor(Color.white);
+		eyeRight.setColor(Color.yellow);
 		
 		// Add the elements to the screen
 		add(faceRect);
