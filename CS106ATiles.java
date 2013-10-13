@@ -43,7 +43,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		mouthRect.setColor(Color.red);
 		
 		// 1/4 Mark row
-		int oneQuarterYPosition = getHeight()/2 ;
+		int oneQuarterYPosition = getHeight()/2 - faceHeight/4 ;
 		
 		GRect oneQuarterRect = new GRect(faceXPosition,oneQuarterYPosition,faceWidth,faceHeight/4);
 		oneQuarterRect.setFilled(true);
