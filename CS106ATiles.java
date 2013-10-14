@@ -21,12 +21,10 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 		while(true){
 			int val = readInt("Enter a value: ");
 			
-			if(val == SENTINEL){
-				total += val;
-			}
-			
+			if(val == SENTINEL) break;
+			total += val;	
+			}	
+		println("hello world");
 		}
-		println("The total is " +  + ".");	
-	}
 }
 
