@@ -17,14 +17,16 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 	public void run(){
 	
 		int total = 0;
-		int val = readInt("Enter a value: ");
 		
-		while(val != SENTINEL){
-			total += val;
-			println(total);
-			val = readInt("Enter a value: ");
+		while(true){
+			int val = readInt("Enter a value: ");
+			
+			if(val == SENTINEL){
+				total += val;
+			}
+			
 		}
-		println("The total is " + total + ".");	
+		println("The total is " +  + ".");	
 	}
 }
 
