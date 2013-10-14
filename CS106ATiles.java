@@ -24,7 +24,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 			if(val == SENTINEL) break;
 			total += val;	
 			}	
-		println("hello world");
+		println("The total is " + total + ".");
 		}
 }
 
