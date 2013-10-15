@@ -30,7 +30,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 			int x = i * sqSize;
 			int y = j * sqSize;
 			
-			GOval mySquare = new GOval(x, y, sqSize, sqSize);
+			GRect mySquare = new GRect(x, y, sqSize, sqSize);
 			mySquare.setFilled(((i+j)%2) ==0);
 			add(mySquare);
 			}
