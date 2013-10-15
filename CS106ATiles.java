@@ -25,10 +25,15 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Simple for loop to 
 		for (int i = 0; i < nRows; i++){
+			// This is the inner loop to set the rows
+			for (int j = 0; j < nCols; j++){
 			int x = i * sqSize;
-			GRect mySquare = new GRect(x, sqSize, sqSize, sqSize);
+			int y = j * sqSize;
+			
+			GRect mySquare = new GRect(x, y, sqSize, sqSize);
 			mySquare.setFilled(i%2 ==0);
 			add(mySquare);
+			}
 		}
 	
 	}
