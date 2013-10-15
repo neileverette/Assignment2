@@ -21,7 +21,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run(){
 		
 		// Get the width of the window and divide it by the number of rows
-		int sqSize = getWidth()/nRows;
+		int sqSize = getHeight()/nRows;
 		
 		// Simple for loop to 
 		for (int i = 0; i < nRows; i++){
