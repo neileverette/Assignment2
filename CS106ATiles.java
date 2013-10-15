@@ -10,21 +10,25 @@ import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
 
-public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
+public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
 
-	private static final int SENTINEL = 0;
+	// The number of rows in the layout
+	private static final int nRows = 8;
+	
+	// The number of columns in the layout
+	private static final int nCols = 8;
 	
 	public void run(){
-	
-		int total = 0;
 		
-		while(true){
-			int val = readInt("Enter a value: ");
-			
-			if(val == SENTINEL) break;
-			total += val;	
-			}	
-		println("The total is " + total + ".");
+		// Get the width of the window and divide it by the number of rows
+		int sqSize = getWidth()/nRows;
+		
+		// Simple for loop to 
+		for (int i = 0; i < nRows; i++){
+			println("This is row " + i);
 		}
+	
+	}
+
 }
 
