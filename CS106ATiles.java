@@ -25,7 +25,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Simple for loop to 
 		for (int i = 0; i < nRows; i++){
-			int x = i * sqSize; 4vy6cht34b fwecazccvgnvnnmnxzvb
+			int x = i * sqSize;
 			GRect mySquare = new GRect(x, sqSize, sqSize, sqSize);
 			add(mySquare);
 		}
