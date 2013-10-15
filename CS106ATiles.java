@@ -13,7 +13,7 @@ import java.awt.*;
 public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
 
 	// The number of rows in the layout
-	private static final int nRows = 9;
+	private static final int nRows = 8;
 	
 	// The number of columns in the layout
 	private static final int nCols = 8;
