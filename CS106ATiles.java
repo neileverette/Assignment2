@@ -25,7 +25,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 		
 		int result = 1;
 		
-		for (int j = 1; j < n; j++){
+		for (int j = 1; j <= n; j++){
 			result *=j;
 		}
 		return result;
