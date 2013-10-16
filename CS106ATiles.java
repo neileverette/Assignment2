@@ -16,7 +16,7 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 	
 	public void run(){
 		for(int i = 0; i < MAX_NUM; i++){
-			println(i + "!" + factorial(i));
+			println("The factorial of " + i + " is " + factorial(i));
 		}
 	}
 	
