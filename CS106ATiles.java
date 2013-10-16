@@ -12,7 +12,7 @@ import java.awt.*;
 
 public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
 
-	private static final int MAX_NUM=11;
+	private static final int MAX_NUM=12;
 	
 	public void run(){
 		for(int i = 0; i < MAX_NUM; i++){
