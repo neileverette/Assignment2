@@ -15,6 +15,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	public void run(){
 
+		add(filledCircle(100,100, 50, Color.black));
 
 	}
 	
