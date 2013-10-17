@@ -10,25 +10,19 @@ import acm.graphics.*;
 import acm.program.*;
 import java.awt.*;
 
-public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
+public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
 
-	private static final int MAX_NUM=12;
 	
 	public void run(){
-		for(int i = 0; i < MAX_NUM; i++){
-			println("The factorial of " + i + " is " + factorial(i));
-		}
+
+
 	}
 	
-	// Write a function to cover the Factorial
-	private int factorial(int n) {
-		
-		int result = 1;
-		
-		for (int j = 1; j <= n; j++){
-			result *=j;
-		}
-		return result;
+	private GOval filledCircle(int x, int y, int r, Color color){
+		GOval circle = new GOval(x-r, y-r, 2*r, 2*r);
+		circle.setFilled(true);
+		circle.setFillColor(color);
+		return circle;
 	}
 
 }
