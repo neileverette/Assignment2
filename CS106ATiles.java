@@ -15,12 +15,8 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 	
 	
 	public void run(){
-		println(rgen);
-		// This is a change to the code
+		println("hello world");
 	}
-	
-	// This is a private instance variable
-	private RandomGenerator rgen = RandomGenerator.getInstance();
 	
 }
 
