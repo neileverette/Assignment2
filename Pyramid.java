@@ -34,7 +34,7 @@ public class Pyramid extends GraphicsProgram {
 			int brickYPosition = getHeight()-i*BRICK_HEIGHT;
 			
 			// This will loop through the columns of bricks
-			for (int j = 1; j < BRICKS_IN_BASE; j++){
+			for (int j = 1; j <= BRICKS_IN_BASE; j++){
 				
 				int brickXPosition = getWidth()-j*BRICK_WIDTH;
 				GRect myBlock = new GRect(brickXPosition, brickYPosition, BRICK_WIDTH, BRICK_HEIGHT);
