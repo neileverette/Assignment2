@@ -13,14 +13,30 @@ import acm.util.*;
 
 public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
 	
+	private static final int NUM_SIDES = 6;
+	
 	
 	public void run(){
-		println(rgen);
-		// This is a change to the code
+		int numDice = readInt("Number of dice: ");
+		int maxRoll = numDice * NUM_SIDES;
+		int numRolls = 0;
+		while(true){
+			int roll = rollDice(numDice);
+			numRolls++;
+			if (roll == maxRoll) break;
+			println("Rolled " + roll);
+		}
+		println("Rolled " + maxRoll + " after " + numRolls + " rolls." );
+		
 	}
 	
-	// This is a private instance variable
-	private RandomGenerator rgen = RandomGenerator.getInstance();
+	private int rollDice(int numDice){
+		int total = 0;
+		for(int i = 0; i < numDice; i++){
+			total = += rgen.nextInt(1, NUM_SIDES);
+		}
+		return total;
+	}
 	
 }
 
