@@ -28,32 +28,16 @@ public class Pyramid extends GraphicsProgram {
 	
 	public void run() {
 		
+		
+		int yPosition = getHeight();
+		
 		// This will loop through the rows
 		for (int i = 0; i < BRICKS_IN_BASE; i++){
+			int xPosition = getWidth();
+			GRect myBlock = new GRect(0,yPosition, BRICK_WIDTH, BRICK_HEIGHT);
+			add(myBlock);
 			
-			// First set the Y height to be the bottom row
-			// Take the height of the window and subtract the brick height
-			// On the outer loop, reduce the Y height by the height of one brick
-			
-			int YPosition = getHeight()-i*BRICK_HEIGHT;
-			
-			// Once the Y height has been set for the outer loop, create an inner loop that lays the bricks down horizontally
-			// First calculate the number of bricks on the row
-			// Subtract a brick on each loop
-			
-			int brickBase = BRICKS_IN_BASE - i;
-			
-			
-			// This inner loop lays down bricks horizontally
-			for (int j = 0; j < brickBase; j++){
-				int XPosition = (getWidth()-i*BRICK_WIDTH);
-				
-				GRect myBlock = new GRect(XPosition, YPosition, BRICK_WIDTH, BRICK_HEIGHT);
-				add(myBlock);
-				
-				// 
-			}
-			
+
 			
 		}
 
