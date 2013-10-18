@@ -33,10 +33,11 @@ public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgra
 	private int rollDice(int numDice){
 		int total = 0;
 		for(int i = 0; i < numDice; i++){
-			total = += rgen.nextInt(1, NUM_SIDES);
+			total += rgen.nextInt(1, NUM_SIDES);
 		}
 		return total;
 	}
 	
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
 
