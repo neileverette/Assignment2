@@ -33,7 +33,7 @@ public class Pyramid extends GraphicsProgram {
 		int base = BRICKS_IN_BASE;
 		
 		// This will loop through the rows
-		for (int i = 0; i < 1; i++){
+		for (int i = 0; i < 2; i++){
 			
 			base = BRICKS_IN_BASE - i;
 			
