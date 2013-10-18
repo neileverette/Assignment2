@@ -28,7 +28,7 @@ public class Pyramid extends GraphicsProgram {
 	
 	public void run() {
 		for (int i = 1; i <= BRICKS_IN_BASE; i++){
-			int brickXPosition = getWidth()/2;
+			int brickXPosition = getWidth()/2 - BRICK_WIDTH;
 			int brickYPosition = getHeight()-i*BRICK_HEIGHT;
 			GRect myBlock = new GRect(brickXPosition, brickYPosition, BRICK_WIDTH, BRICK_HEIGHT);
 			add(myBlock);
