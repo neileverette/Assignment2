@@ -30,13 +30,14 @@ public class Pyramid extends GraphicsProgram {
 		
 
 		int base = BRICKS_IN_BASE;
-		int yPosition = getHeight()-i*BRICK_HEIGHT;
+		
 		
 		// This will loop through the rows
 		for (int i = 0; i < BRICKS_IN_BASE; i++){
 			
 			base = BRICKS_IN_BASE;
 			
+			int yPosition = getHeight()-i*BRICK_HEIGHT;
 			
 			
 			int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
