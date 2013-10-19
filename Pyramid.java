@@ -30,7 +30,7 @@ public class Pyramid extends GraphicsProgram {
 		
 		for (int i = 0; i < BRICKS_IN_BASE; i++){
 			int base = BRICKS_IN_BASE -i;
-			for(int j = 1; j < base; j++){
+			for(int j = 1; j <= base; j++){
 				
 				//int x = 0 + j*BRICK_WIDTH - BRICK_WIDTH;
 				// Get the mid point of the screen
