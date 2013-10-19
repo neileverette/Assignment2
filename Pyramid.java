@@ -36,7 +36,7 @@ public class Pyramid extends GraphicsProgram {
 				// Get the mid point of the screen
 				// Subtract half of the overall width of the total
 				
-				int x = getWidth()/2 -(base*BRICK_WIDTH/2);
+				int x = getWidth()/2 - (base*BRICK_WIDTH/2) + j*BRICK_WIDTH;
 						
 				int y = getHeight() - i*BRICK_HEIGHT - BRICK_HEIGHT;
 				GRect myBlock = new GRect(x,y, BRICK_WIDTH, BRICK_HEIGHT);
