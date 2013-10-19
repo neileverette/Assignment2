@@ -13,6 +13,9 @@ import java.awt.*;
 public class Target extends GraphicsProgram {	
 	public void run() {
 		
+		int circle1 = 72;
+		
+		
 		int x = getWidth()/2;
 		int y = getHeight()/2;
 		
