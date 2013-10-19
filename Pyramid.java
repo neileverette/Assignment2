@@ -40,7 +40,7 @@ public class Pyramid extends GraphicsProgram {
 				
 				
 				int y = getHeight() - i*BRICK_HEIGHT - BRICK_HEIGHT;
-				GLabel myLabel = new GLabel( "i",x,y);
+				GLabel myLabel = new GLabel( i,x,y);
 				GRect myBlock = new GRect(x,y, BRICK_WIDTH, BRICK_HEIGHT);
 				add(myBlock);
 				add(myLabel);
