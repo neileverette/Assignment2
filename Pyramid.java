@@ -33,7 +33,7 @@ public class Pyramid extends GraphicsProgram {
 			for(int j = 0; j < base; j++){
 				
 				//int x = 0 + j*BRICK_WIDTH - BRICK_WIDTH;
-				int x = getWidth()/2 +  - j*BRICK_WIDTH + j*BRICK_WIDTH;
+				int x = (getWidth()/2 - j*BRICK_WIDTH) + j*BRICK_WIDTH;
 				
 				
 				int y = getHeight() - i*BRICK_HEIGHT - BRICK_HEIGHT;
