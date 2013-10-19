@@ -49,6 +49,7 @@ public class Pyramid extends GraphicsProgram {
 				add(myBlock);
 			}
 		}
+		
 		// Decrease the base by 1 brick
 		base--;
 
