@@ -18,9 +18,6 @@ public class Target extends GraphicsProgram {
 		
 		add(filledCircle(x, y, 2, Color.RED));
 	
-//		GOval circle = new GOval(x-r, y-r, 2*r, 2*r);
-//		circle.setFilled(true);
-//		circle.setColor(color);
 		
 	}
 	
