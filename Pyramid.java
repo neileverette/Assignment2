@@ -28,8 +28,7 @@ public class Pyramid extends GraphicsProgram {
 	
 	public void run() {
 		
-		
-		int yPosition = getHeight();
+
 		int base = BRICKS_IN_BASE;
 		
 		// This will loop through the rows
@@ -37,13 +36,11 @@ public class Pyramid extends GraphicsProgram {
 			
 			base = BRICKS_IN_BASE;
 			
-			// Set the X position to be in the middle of the screen
-			// First get the width of the window and divide in half
-			// Then subtract half of the overall width of the base of bricks
+			int yPosition = getHeight()-i*BRICK_HEIGHT;
+			
 			int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
 
-			// Add a block to the screen on each loop
-			GRect myBlock = new GRect(xPosition,BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT);
+			GRect myBlock = new GRect(xPosition,yPosition, BRICK_WIDTH, BRICK_HEIGHT);
 			add(myBlock);
 		}
 		
