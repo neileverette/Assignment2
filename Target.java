@@ -13,14 +13,23 @@ import java.awt.*;
 public class Target extends GraphicsProgram {	
 	public void run() {
 		
-		add(circle(10,10,20,20, Color.RED));
+		int x = getWidth()/2;
+		int y = getHeight()/2;
+		
+		add(filledCircle(x, y, 2, Color.RED));
+	
+//		GOval circle = new GOval(x-r, y-r, 2*r, 2*r);
+//		circle.setFilled(true);
+//		circle.setColor(color);
 		
 	}
 	
-	private GOval circle(int x, int y, int r, Color color){
+	private GOval filledCircle(int x, int y, int r, Color color){
 		GOval circle = new GOval(x-r, y-r, 2*r, 2*r);
 		circle.setFilled(true);
 		circle.setColor(color);
 		return circle;
+		
 	}
+	
 }
