@@ -36,7 +36,7 @@ public class Pyramid extends GraphicsProgram {
 				// Get the mid point of the screen
 				// Subtract half of the overall width of the total
 				
-				int x = j*BRICK_WIDTH;
+				int x = j*BRICK_WIDTH/2;
 				
 				
 				int y = getHeight() - i*BRICK_HEIGHT - BRICK_HEIGHT;
