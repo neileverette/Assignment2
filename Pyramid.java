@@ -37,17 +37,14 @@ public class Pyramid extends GraphicsProgram {
 			
 			base = BRICKS_IN_BASE;
 			
-			for (int j = 0; j < base; j++){
-				
-				// Set the X position to be in the middle of the screen
-				// First get the width of the window and divide in half
-				// Then subtract half of the overall width of the base of bricks
-				int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
+			// Set the X position to be in the middle of the screen
+			// First get the width of the window and divide in half
+			// Then subtract half of the overall width of the base of bricks
+			int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
 
-				// Add a block to the screen on each loop
-				GRect myBlock = new GRect(xPosition,BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT);
-				add(myBlock);
-			}
+			// Add a block to the screen on each loop
+			GRect myBlock = new GRect(xPosition,BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT);
+			add(myBlock);
 		}
 		
 		// Decrease the base by 1 brick
