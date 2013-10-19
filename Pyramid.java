@@ -37,14 +37,10 @@ public class Pyramid extends GraphicsProgram {
 				// Subtract half of the overall width of the total
 				
 				int x = getWidth()/2 -(j*BRICK_WIDTH);
-				
-				
+						
 				int y = getHeight() - i*BRICK_HEIGHT - BRICK_HEIGHT;
-				GLabel myLabel = new GLabel( i,x,y);
 				GRect myBlock = new GRect(x,y, BRICK_WIDTH, BRICK_HEIGHT);
 				add(myBlock);
-				add(myLabel);
-				
 			}
 		}
 	}
