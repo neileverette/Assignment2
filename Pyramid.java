@@ -29,29 +29,17 @@ public class Pyramid extends GraphicsProgram {
 	
 	public void run() {
 		
-
-		int base = BRICKS_IN_BASE;
-		
-		
-		// This will loop through the rows
 		for (int i = 0; i < BRICKS_IN_BASE; i++){
 			
-			base = BRICKS_IN_BASE;
-			
-			int yPosition = getHeight()-i*BRICK_HEIGHT;
-			
-			for(int j = 0; j < base; j++){
-				int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH;
-
+			for(int j=0; j < BRICKS_IN_BASE; j++){
+				int xPosition = 0 + i*BRICK_WIDTH;
+				int yPosition = getHeight()-j*BRICK_HEIGHT;
 				GRect myBlock = new GRect(xPosition,yPosition, BRICK_WIDTH, BRICK_HEIGHT);
 				add(myBlock);
-			}
+			}		
 		}
-		
-		// Decrease the base by 1 brick
-		base--;
-
 	}
+
 	
 }
 
