@@ -36,14 +36,16 @@ public class Pyramid extends GraphicsProgram {
 		for (int i = 0; i < BRICKS_IN_BASE; i++){
 			
 			base = BRICKS_IN_BASE;
-			base--;
-
 			
-			int xPosition =  getWidth()/2 - 14*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
+			for (int j = 0; j < base; j++){
+				int xPosition =  getWidth()/2 - base*BRICK_WIDTH/2 + i*BRICK_WIDTH ;
 
-			GRect myBlock = new GRect(xPosition,BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT);
-			add(myBlock);
+				GRect myBlock = new GRect(xPosition,BRICK_HEIGHT, BRICK_WIDTH, BRICK_HEIGHT);
+				add(myBlock);
+			}
 		}
+		// Decrease the base by 1 brick
+		base--;
 
 	}
 	
