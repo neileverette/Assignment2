@@ -21,12 +21,13 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run(){
 	
 		add(box(10, 10, WIDTH, HEIGHT));
-		add(label("This is a label", 100, 100));
+		
 		
 	}
 	
 	private GRect box(int x, int y, int width, int height){
 		GRect myRect = new GRect(x,y, width,height);
+		add(label("This is a label", x, y));
 		return myRect;
 	}
 	
