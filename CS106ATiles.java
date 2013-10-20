@@ -20,8 +20,8 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 	}
 	
-	private GRect box(int x, int y, int height, int width){
-		GRect myRect = new GRect(x,y, height,width);
+	private GRect box(int x, int y, int width, int height){
+		GRect myRect = new GRect(x,y, width,height);
 		return myRect;
 		
 	}
