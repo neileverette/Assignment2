@@ -29,13 +29,13 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	private GRect box(int x, int y, int width, int height, String label){
 		GRect myRect = new GRect(x,y, width,height);
-		add(label(label, x, y));
+		add(label(label, x, y,width,height));
 		return myRect;
 	}
 	
 	private GLabel label(String str, int labelX, int labelY ){
 		
-		GLabel myLabel = new GLabel(str, labelX, labelY);
+		GLabel myLabel = new GLabel(str, labelX, labelY, int width, int height);
 		
 		double labelWidth = myLabel.getWidth();
 		double labelHeight = myLabel.getAscent();
