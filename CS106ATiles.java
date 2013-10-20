@@ -16,7 +16,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	public void run(){
 	
-		add(box(10, 10, 30, 100));
+		add(box(10, 10, 100, 30));
 		
 	}
 	
