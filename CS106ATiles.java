@@ -21,6 +21,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run(){
 	
 		add(box(10, 10, WIDTH, HEIGHT));
+		add(label("This is a label", 100, 100));
 		
 	}
 	
