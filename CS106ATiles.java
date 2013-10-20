@@ -21,7 +21,6 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run(){
 	
 		add(box(10, 10, WIDTH, HEIGHT, "Target"));
-		
 	}
 	
 	private GRect box(int x, int y, int width, int height, String label){
