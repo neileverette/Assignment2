@@ -16,7 +16,7 @@ import acm.program.*;
 public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
 	
 	private static final int WIDTH = 5;
-	private static final int HEIGHT = 10;
+	private static final int HEIGHT = 20;
 	
 	public void run(){
 		
