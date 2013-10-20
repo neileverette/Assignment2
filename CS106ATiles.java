@@ -34,9 +34,9 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		GLabel myLabel = new GLabel(str, labelX, labelY);
 		
-		double width = myLabel.getWidth();
+		double labelWidth = myLabel.getWidth();
 		
-		myLabel.setLocation(width-WIDTH/2,100);
+		myLabel.setLocation(labelWidth-WIDTH/2,100);
 		return myLabel;
 	}
 }
