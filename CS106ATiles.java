@@ -16,12 +16,15 @@ import acm.program.*;
 public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
 	
 	private static final int WIDTH = 5;
-	private static final int HEIGHT = 100;
+	private static final int HEIGHT = 5;
 	
 	public void run(){
+		
+		int boxWidth = getWidth()/WIDTH;
+		int boxHeight = getHeight()/WIDTH;
 	
-		add(box(200, 10, getWidth()/WIDTH, HEIGHT, "Program"));
-		add(box(10, 100, getWidth()/WIDTH, HEIGHT, "GraphicsProgram"));
+		add(box(200, 10, boxWidth, boxWidth, "Program"));
+		add(box(10, 100, gboxWidth, boxWidth, "GraphicsProgram"));
 	}
 	
 	private GRect box(int x, int y, int width, int height, String label){
