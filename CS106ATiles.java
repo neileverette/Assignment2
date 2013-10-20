@@ -24,7 +24,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int boxHeight = getHeight()/WIDTH;
 	
 		add(box(200, 10, boxWidth, boxWidth, "Program"));
-		add(box(10, 100, gboxWidth, boxWidth, "GraphicsProgram"));
+		add(box(10, 100, boxWidth, boxWidth, "GraphicsProgram"));
 	}
 	
 	private GRect box(int x, int y, int width, int height, String label){
