@@ -19,6 +19,6 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		double y = valueA*valueA + valueB*valueB;
 		y = Math.sqrt(y);
 		
-		println(y);
+		println((int)y);
 	}
 }
