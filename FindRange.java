@@ -30,6 +30,8 @@ public class FindRange extends ConsoleProgram {
 			}else if (number+1 == SENTINEL){
 				println("You are very close");
 				lowNum = number;
+			}else if (number < lowNum || lowNum == null){
+				lowNum = number;
 			}
 		}
 		
