@@ -47,7 +47,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Call method to add a line
 		
 		
-		add (line(0,getWidth()/2-WIDTH,100,100));
+		add (line(getWidth()/2-WIDTH, getHeight()/4,100,100));
 		return myRect;
 	}
 	
