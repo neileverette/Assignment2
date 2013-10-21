@@ -18,6 +18,8 @@ public class FindRange extends ConsoleProgram {
 		
 		while(true){
 			int number = readInt("?");
+			
+			if(number == SENTINEL)break;
 		}
 		
 	//	println("You hit the SENTINEL");
