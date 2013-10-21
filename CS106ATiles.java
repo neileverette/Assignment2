@@ -29,16 +29,15 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int box2X = (getWidth()/3 - WIDTH)/2;
 		int box3X = (getWidth()*2/3) + (getWidth()/3 - WIDTH)/2;
 		
-		// Coordinates of the lines
 	
 		// Adds 4 boxes on the screen
-		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program"));
-		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
-		add(box(box1X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram"));
-		add(box(box3X, rowTwoHeight, WIDTH, HEIGHT, "DialogProgram"));
+		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program", false));
+		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram", true));
+		add(box(box1X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram", true));
+		add(box(box3X, rowTwoHeight, WIDTH, HEIGHT, "DialogProgram", true));
 	}
 	
-	private GRect box(int x, int y, int width, int height, String label){
+	private GRect box(int x, int y, int width, int height, String label, boolean line ){
 		GRect myRect = new GRect(x,y, width,height);
 		
 		// Get connection points for box
