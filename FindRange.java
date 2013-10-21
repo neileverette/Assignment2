@@ -14,15 +14,10 @@ public class FindRange extends ConsoleProgram {
 	
 	public void run() {
 		
+		println("This application checks for low and high numbers");
+		
 		while(true){
-			int number = readInt("Enter a number: ");
-			
-			if (number == SENTINEL){
-				println("You hit the Sentinel");
-			}else if (number == SENTINEL - 1 || number == SENTINEL + 1 ){
-				println("You are very close");
-			}
-				
+			int number = readInt("?");
 		}
 		
 	//	println("You hit the SENTINEL");
