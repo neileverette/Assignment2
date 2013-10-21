@@ -22,9 +22,12 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		int rowOneHeight = getWidth()/2-WIDTH/2;
 		int rowTwoHeight = getHeight()/4-HEIGHT/2;
+		
+		int box1X = getWidth()/2-WIDTH/2;
+		int box2X = getWidth()/3-WIDTH/2;
 	
-		add(box(rowOneHeight, rowTwoHeight, WIDTH, HEIGHT, "Program"));
-		add(box(getWidth()/2-WIDTH/2, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
+		add(box(box1X, rowTwoHeight, WIDTH, HEIGHT, "Program"));
+		add(box(rowTwoHeight, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
 	}
 	
 	private GRect box(int x, int y, int width, int height, String label){
