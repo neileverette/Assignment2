@@ -19,7 +19,7 @@ public class FindRange extends ConsoleProgram {
 		
 		while(true){
 			// Ask the user for a number
-			int number = readInt("Enter a number");
+			int number = readInt("Enter a number: ");
 			
 			// Check for the SENTINEL
 			if (number == SENTINAL)break;
