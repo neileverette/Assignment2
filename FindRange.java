@@ -14,19 +14,22 @@ public class FindRange extends ConsoleProgram {
 	
 	public void run() {
 
-		int lowestNumber;
-		int higestNumber;
+		int lowestNumber = 0;
+		int higestNumber = 0;
 		
 		while(true){
 			// Ask the user for a number
 			int number = readInt("Enter a number: ");
 			
+			if(number > number){
+				lowestNumber = number;
+			}
+			
 			// Check for the SENTINEL
 			if (number == SENTINAL)break;
-			
-			
 		}
 		
+		println(lowestNumber);		
 	}
 }
 
