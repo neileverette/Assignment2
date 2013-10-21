@@ -10,24 +10,27 @@ import acm.program.*;
 
 public class FindRange extends ConsoleProgram {
 	
-	private static final int SENTINAL = 7;
+	private static final int SENTINEL = 7;
 	
 	public void run() {
-
-
+		
+		println("This number finds the largest and smallest numbers");
+		int number = readInt("Enter a number: ");
+		
+		int highNum = number;
+		int lowNum = number;
 		
 		while(true){
-			// Ask the user for a number
-			int number = readInt("Enter a number: ");
+			number = readInt("Enter a number: ");
 		
-
-			int lowestNumber;
-			int higestNumber;
+			if (number > highNum){
+				highNum = number;
+			}else if (number < lowNum){
+				lowNum = number;
+			}else break;
 			
-			// Check for the SENTINEL
-			if (number == SENTINAL)break;
 		}
-		
+		println("You hit the SENTINEL");
 	}
 }
 
