@@ -31,6 +31,8 @@ public class FindRange extends ConsoleProgram {
 			
 		}
 		println("You hit the SENTINEL");
+		println("Low number is " + lowNum);
+		println("High number is " + HighNum);
 	}
 }
 
