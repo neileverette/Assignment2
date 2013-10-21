@@ -42,8 +42,8 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		GRect myRect = new GRect(x,y, width,height);
 		
 		// Get connection points for box
-		int xPos = getX();
-		int yPos = getY();
+		double xPos = myRect.getX();
+		double yPos = myRect.getY();
 		
 		// Call method to add a label
 		add(label(label, x, y));
