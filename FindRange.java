@@ -13,8 +13,6 @@ public class FindRange extends ConsoleProgram {
 	private static final int SENTINAL = 7;
 	
 	public void run() {
-		
-		println("Enter some numbers:");
 
 		int lowestNumber;
 		int higestNumber;
