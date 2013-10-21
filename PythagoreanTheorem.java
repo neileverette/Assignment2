@@ -17,7 +17,7 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		double valueB = readInt("Enter second number:");
 		
 		double valueC = valueA*valueA + valueB*valueB;
-		valueC = Math.sqrt(y);
+		valueC = Math.sqrt(valueC);
 		
 		println("c = " + valueC);
 	}
