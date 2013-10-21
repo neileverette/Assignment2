@@ -13,8 +13,12 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		
 		println("Enter values to compute Pythagorean theorem");
 		
-		int valueA = readInt("Enter first number.");
-		int valueB = readInt("Enter second number.");
+		double valueA = readInt("Enter first number:");
+		double valueB = readInt("Enter second number:");
 		
+		double y = valueA*valueA + valueB*valueB;
+		y = Math.sqrt(y);
+		
+		println(y);
 	}
 }
