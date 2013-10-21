@@ -24,8 +24,8 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		int rowTwoHeight = getHeight()*2/3 - HEIGHT/2;
 		
 		int box1X = getWidth()/2-WIDTH/2;
-		int box2X = getWidth()/3-WIDTH/2;
-		int box3X = getWidth()*2/3-WIDTH/2;
+		int box2X = getWidth()/3 + WIDTH/2;
+		int box3X = getWidth()*2/3 + WIDTH/2;
 	
 		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program"));
 		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
