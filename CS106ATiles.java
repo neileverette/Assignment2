@@ -29,7 +29,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program"));
 		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
-		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram"));
+		add(box(box3X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram"));
 	}
 	
 	private GRect box(int x, int y, int width, int height, String label){
