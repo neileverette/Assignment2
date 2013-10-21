@@ -19,10 +19,11 @@ public class FindRange extends ConsoleProgram {
 		
 		if(number == SENTINEL){
 			println("You hit the Sentinel");
-		}else{
-			int highNum = number;
-			int lowNum = number;
 		}
+		
+		int highNum = number;
+		int lowNum = number;
+		
 			
 		while(true){
 			
