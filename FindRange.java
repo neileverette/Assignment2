@@ -14,8 +14,8 @@ public class FindRange extends ConsoleProgram {
 	
 	public void run() {
 
-		int lowestNumber = 0;
-		int higestNumber = 0;
+		int lowestNumber;
+		int higestNumber;
 		
 		while(true){
 			// Ask the user for a number
@@ -29,7 +29,8 @@ public class FindRange extends ConsoleProgram {
 			if (number == SENTINAL)break;
 		}
 		
-		println(lowestNumber);		
+		println(lowestNumber);
+		println(highestNumber);
 	}
 }
 
