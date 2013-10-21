@@ -55,7 +55,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Call method to add a line
 		if (line){ // check to see if the box needs a line
-			add (connectorX,getHeight()/4 + HEIGHT/2,xPos, yPos));
+			add (line(connectorX,getHeight()/4 + HEIGHT/2,xPos, yPos));
 		}
 		return myRect;
 	}
