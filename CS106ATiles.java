@@ -41,13 +41,16 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	private GRect box(int x, int y, int width, int height, String label){
 		GRect myRect = new GRect(x,y, width,height);
 		
+		// Get connection points for box
+		int xPos = getX();
+		
 		// Call method to add a label
 		add(label(label, x, y));
 		
 		// Call method to add a line
 		
 		
-		add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,100,100));
+		add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,xPos,100));
 		return myRect;
 	}
 	
