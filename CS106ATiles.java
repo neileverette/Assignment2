@@ -41,7 +41,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	private GRect box(int x, int y, int width, int height, String label){
 		GRect myRect = new GRect(x,y, width,height);
 		add(label(label, x, y));
-		add myLine(0,0,100,100);
+		add (myLine(0.0,0.0,100.0,100.0));
 		return myRect;
 	}
 	
