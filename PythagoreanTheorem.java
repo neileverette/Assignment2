@@ -16,9 +16,9 @@ public class PythagoreanTheorem extends ConsoleProgram {
 		double valueA = readInt("Enter first number:");
 		double valueB = readInt("Enter second number:");
 		
-		double y = valueA*valueA + valueB*valueB;
-		y = Math.sqrt(y);
+		double valueC = valueA*valueA + valueB*valueB;
+		valueC = Math.sqrt(y);
 		
-		println(y);
+		println("c = " + valueC);
 	}
 }
