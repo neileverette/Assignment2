@@ -18,12 +18,12 @@ public class FindRange extends ConsoleProgram {
 		
 		while(true){
 			int number = readInt("? ");
-			int lowNum;
-			int highNum;
 			
 			if(number == SENTINEL){
 				println("You hit the SENTINEL");
 				break;
+			}else if (number-1 == SENTINEL || number+1 == SENTINEL){
+				println("You are very close");
 			}
 		}
 		
