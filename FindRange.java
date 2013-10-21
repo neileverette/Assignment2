@@ -17,10 +17,15 @@ public class FindRange extends ConsoleProgram {
 		println("This number finds the largest and smallest numbers");
 		int number = readInt("Enter a number: ");
 		
-		int highNum = number;
-		int lowNum = number;
-		
+		if(number == SENTINEL){
+			println("You hit the Sentinel");
+		}else{
+			int highNum = number;
+			int lowNum = number;
+		}
+			
 		while(true){
+			
 			number = readInt("Enter a number: ");
 		
 			if (number > highNum){
