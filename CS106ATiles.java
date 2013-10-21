@@ -43,6 +43,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		// Get connection points for box
 		int xPos = getX();
+		int yPos = getY();
 		
 		// Call method to add a label
 		add(label(label, x, y));
@@ -50,7 +51,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Call method to add a line
 		
 		
-		add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,xPos,100));
+		add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,xPos, yPos));
 		return myRect;
 	}
 	
