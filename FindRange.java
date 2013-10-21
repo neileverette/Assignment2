@@ -21,7 +21,6 @@ public class FindRange extends ConsoleProgram {
 		int lowNum = number;
 		
 		while(true){
-			
 			number = readInt("Enter a number: ");
 		
 			if (number > highNum){
