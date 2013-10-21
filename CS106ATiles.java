@@ -20,7 +20,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	public void run(){
 		
-		int rowOneHeight = getHeight()/2 - HEIGHT/2;
+		int rowOneHeight = getHeight()/4 - HEIGHT/2;
 		int rowTwoHeight = getHeight()/4-HEIGHT/2;
 		
 		int box1X = getWidth()/2-WIDTH/2;
