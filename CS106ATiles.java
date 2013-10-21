@@ -21,7 +21,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	public void run(){
 		
 		// Sets the Y position of the boxes
-		int rowOneHeight = getHeight()/4 - HEIGHT/2;
+		int rowOneHeight = getHeight()/5 - HEIGHT/2;
 		int rowTwoHeight = getHeight()*2/3 - HEIGHT/2;
 		
 		// Sets the X position of the boxes
