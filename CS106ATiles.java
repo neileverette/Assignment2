@@ -20,13 +20,18 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	
 	public void run(){
 		
+		// Sets the Y position of the boxes
 		int rowOneHeight = getHeight()/4 - HEIGHT/2;
 		int rowTwoHeight = getHeight()*2/3 - HEIGHT/2;
 		
+		// Sets the X position of the boxes
 		int box1X = getWidth()/2-WIDTH/2;
 		int box2X = (getWidth()/3 - WIDTH)/2;
 		int box3X = (getWidth()*2/3) + (getWidth()/3 - WIDTH)/2;
+		
+		// Coordinates of the lines
 	
+		// Adds 4 boxes on the screen
 		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program"));
 		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram"));
 		add(box(box1X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram"));
@@ -36,6 +41,7 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 	private GRect box(int x, int y, int width, int height, String label){
 		GRect myRect = new GRect(x,y, width,height);
 		add(label(label, x, y));
+		add myLine(0,0,100,100);
 		return myRect;
 	}
 	
@@ -48,6 +54,12 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		
 		myLabel.setLocation(labelX+((WIDTH-labelWidth)/2),labelY + HEIGHT/2 + labelHeight/2);
 		return myLabel;
+	}
+
+	private GLine line(double x0, double y0, double x1, double y1){
+		GLine myLine = new GLine(x0, y0, x1, y1);
+		return myLine;
+	
 	}
 }
 
