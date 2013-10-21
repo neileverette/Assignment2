@@ -17,7 +17,7 @@ public class FindRange extends ConsoleProgram {
 		println("This application checks for low and high numbers");
 		
 		while(true){
-			int number = readInt("?");
+			int number = readInt("? ");
 			int lowNum;
 			int highNum;
 			
