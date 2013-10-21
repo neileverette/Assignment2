@@ -47,12 +47,6 @@ public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgr
 		// Call method to add a label
 		add(label(label, x, y));
 		
-		
-		if (line == false){
-			double connectorX = myRect.getX() + WIDTH/2 ;
-			double connectorY;
-		}
-		
 		// Call method to add a line
 		if (line){ // check to see if the box needs a line
 			add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,xPos, yPos));
