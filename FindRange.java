@@ -9,8 +9,22 @@
 import acm.program.*;
 
 public class FindRange extends ConsoleProgram {
+	
+	private static final int SENTINAL = 7;
+	
 	public void run() {
-		/* You fill this in */
+		
+		println("Enter some numbers:");
+
+		int lowestNumber;
+		int higestNumber;
+		
+		while(true){
+			// Ask the user for a number
+			int number = readInt("Enter a number");
+			
+		}
+		
 	}
 }
 
