@@ -16,11 +16,11 @@ public class Hailstone extends ConsoleProgram {
 		
 		while (myNum != 1){
 			if (myNum%2==0){
-				println(myNum + " is even so I take half");
+				println(myNum + " is even so I take half: " + myNum/2);
 				myNum = myNum/2;
 			
 			}else {
-				println(myNum + " is odd so I make 3n+1");
+				println(myNum + " is odd so I make 3n+1" + 3*myNum + 1);
 				myNum = 3*myNum + 1;
 			}counter++;
 		}println("It took " + counter + " steps");
