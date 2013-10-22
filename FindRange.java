@@ -16,10 +16,13 @@ public class FindRange extends ConsoleProgram {
 		
 		println("This application checks for low and high numbers");
 		
+		int number = readInt("? ");
+		
+		int lowNum = number;
+		int highNum = number;
+		
 		while(true){
-			int number = readInt("? ");
-			int lowNum;
-			int highNum;
+			
 			
 			if(number == SENTINEL){
 				println("You hit the SENTINEL");
@@ -30,14 +33,18 @@ public class FindRange extends ConsoleProgram {
 			}else if (number+1 == SENTINEL){
 				println("You are very close");
 				lowNum = number;
-			}else if (number < lowNum || lowNum == null){
-				lowNum = number;
 			}
+			
+			number = readInt("? ");
 		}
 		
 	//	
 	//	println("Low number is " + lowNum);
 	//	println("High number is " + highNum);
+	}
+	
+	private int checkSentinel (int x){
+		return x;
 	}
 }
 
