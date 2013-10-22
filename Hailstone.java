@@ -12,6 +12,7 @@ public class Hailstone extends ConsoleProgram {
 	public void run() {
 		
 		int myNum = readInt("Enter a number: ");
+		int counter = 1;
 		
 		while (myNum != 1){
 			if (myNum%2==0){
@@ -21,7 +22,7 @@ public class Hailstone extends ConsoleProgram {
 			}else {
 				println(myNum + " is odd so I make 3n+1");
 				myNum = 3*myNum + 1;
-			}int counter=+1;
+			}counter++;
 		}
 	}
 }
