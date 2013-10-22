@@ -23,7 +23,6 @@ public class FindRange extends ConsoleProgram {
 		
 		while(true){
 			
-			
 			if(number == SENTINEL){
 				println("You hit the SENTINEL");
 				break;
@@ -36,15 +35,16 @@ public class FindRange extends ConsoleProgram {
 			}
 			
 			number = readInt("? ");
+			
+			if (number < lowNum){
+				lowNum = number;
+			}else if (number > highNum){
+				highNum = number;
+			}
 		}
-		
-	//	
-	//	println("Low number is " + lowNum);
-	//	println("High number is " + highNum);
-	}
-	
-	private int checkSentinel (int x){
-		return x;
+			
+		println("Low number is " + lowNum);
+		println("High number is " + highNum);
 	}
 }
 
