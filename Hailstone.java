@@ -23,7 +23,7 @@ public class Hailstone extends ConsoleProgram {
 				println(myNum + " is odd so I make 3n+1");
 				myNum = 3*myNum + 1;
 			}counter++;
-		}
+		}println("It took " + counter + " steps");
 	}
 }
 
