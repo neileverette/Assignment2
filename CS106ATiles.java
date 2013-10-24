@@ -8,67 +8,39 @@
 
 import acm.graphics.*;
 import acm.program.*;
+import acm.util.RandomGenerator;
 //import java.awt.*;
 //import acm.util.*;
 
 
 
-public class CS106ATiles extends GraphicsProgram  { //Replace with GraphicsProgram 
+public class CS106ATiles extends ConsoleProgram  { //Replace with GraphicsProgram 
 	
-	private static final int WIDTH = 200;
-	private static final int HEIGHT = 75;
+	private static final int NUM_SIDES= 6;
 	
 	public void run(){
+		int numDice = readInt("Number of dice: ");
+		int maxRoll = NUM_SIDES * numDice;
+		int numRolls = 0;
 		
-		// Sets the Y position of the boxes
-		int rowOneHeight = getHeight()/4 - HEIGHT/2;
-		int rowTwoHeight = getHeight()*2/3 - HEIGHT/2;
-		
-		// Sets the X position of the boxes
-		int box1X = getWidth()/2-WIDTH/2;
-		int box2X = (getWidth()/3 - WIDTH)/2;
-		int box3X = (getWidth()*2/3) + (getWidth()/3 - WIDTH)/2;
-		
-	
-		// Adds 4 boxes on the screen
-		add(box(box1X, rowOneHeight, WIDTH, HEIGHT, "Program", false));
-		add(box(box2X, rowTwoHeight, WIDTH, HEIGHT, "GraphicsProgram", true));
-		add(box(box1X, rowTwoHeight, WIDTH, HEIGHT, "ConsoleProgram", true));
-		add(box(box3X, rowTwoHeight, WIDTH, HEIGHT, "DialogProgram", true));
-	}
-	
-	private GRect box(int x, int y, int width, int height, String label, boolean line ){
-		GRect myRect = new GRect(x,y, width,height);
-		
-		// Get connection points for box
-		double xPos = myRect.getX() + WIDTH/2;
-		double yPos = myRect.getY();
-		
-		// Call method to add a label
-		add(label(label, x, y));
-		
-		// Call method to add a line
-		if (line){ // check to see if the box needs a line
-			add (line(getWidth()/2,getHeight()/4 + HEIGHT/2,xPos, yPos));
+		while(true){
+			int roll = rollDice(numDice);
+			numRolls++;
+			if (roll == maxRoll)break;
+			println("You rolled " + roll);
 		}
-		return myRect;
+ 		println("Rolled " + maxRoll + " after " + numRolls);
 	}
 	
-	private GLabel label(String str, int labelX, int labelY ){
-		
-		GLabel myLabel = new GLabel(str, labelX, labelY);
-		
-		double labelWidth = myLabel.getWidth();
-		double labelHeight = myLabel.getAscent();
-		
-		myLabel.setLocation(labelX+((WIDTH-labelWidth)/2),labelY + HEIGHT/2 + labelHeight/2);
-		return myLabel;
+	// Returns the total number of rolling numDic
+	private int rollDice(int numDice){
+		int total = 0;
+		for (int i = 0; i < numDice; i++){
+			total += rgen.nextInt(1, NUM_SIDES);
+		}
+		return total;
 	}
-
-	private GLine line(double x0, double y0, double x1, double y1){
-		GLine myLine = new GLine(x0, y0, x1, y1);
-		return myLine;
 	
-	}
+	private RandomGenerator rgen = RandomGenerator.getInstance();
 }
 
