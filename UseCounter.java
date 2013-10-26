@@ -19,6 +19,9 @@ public class UseCounter extends ConsoleProgram{
 		println("Another five values of count1");
 		countFiveTimes(count1);
 		
+		println("Another five values of count2");
+		countFiveTimes(count2);
+		
 	}
 	
 	private void countFiveTimes(Incrementor counter){
