@@ -10,9 +10,9 @@ public class Incrementor {
 	}
 	
 	public int nextValue(){
-		//int temp = counter;
+		int temp = counter;
 		counter++;
-		return counter;
+		return temp;
 	}
 
 	private int counter;
