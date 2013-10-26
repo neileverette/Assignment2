@@ -16,7 +16,8 @@ public class UseCounter extends ConsoleProgram{
 		countFiveTimes(count2);
 		
 		
-		
+		println("Another five values of count1");
+		countFiveTimes(count1);
 		
 	}
 	
