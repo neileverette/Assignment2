@@ -16,7 +16,7 @@ public class UseCounter extends ConsoleProgram{
 	
 	private void countFiveTimes(Incrementor counter){
 		for (int i = 0; i < 5; i++){
-			printlin(counter.nextValue());
+			println(counter.nextValue());
 		}
 	}
 
