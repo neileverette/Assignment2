@@ -12,7 +12,7 @@ public class Incrementor {
 	public int nextValue(){
 		int temp = counter;
 		counter++;
-		return temp;
+		return counter;
 	}
 
 	private int counter;
