@@ -9,7 +9,7 @@ public class Incrementor {
 		counter = 1;
 	}
 	
-	private int nextValue(){
+	public int nextValue(){
 		int temp = counter;
 		counter++;
 		return temp;
