@@ -5,7 +5,6 @@ public class UseCounter extends ConsoleProgram{
 
 
 	public void run() {
-		setFont("Time New Roman - 20");
 		
 		Incrementor count1 = new Incrementor(); // starts at 1
 		
