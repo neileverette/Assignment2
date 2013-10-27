@@ -30,9 +30,7 @@ public class Student {
 	
 	// Increments units
 	public void incrementUnits(double additionalUnits){
-		if(additionalUnits >0){
 		unitsEarned += additionalUnits;
-		}
 	}
 	
 	
