@@ -14,6 +14,7 @@ public class Stanford extends ConsoleProgram{
 		println(stud2.getName() + " has " + stud2.getUnits() + " units.");
 		println(stud2.getName() + " is a " + stud2.CLASS);
 		
+		println();
 		
 		println(stud.getName() + " has "+ stud.getUnits() + " units.");
 		
