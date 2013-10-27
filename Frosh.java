@@ -10,5 +10,7 @@ public class Frosh extends Student{
 		return ("Frosh: " + getName() + 
 				" (#" + getID() + ")");
 	}
+	
+	public static final String CLASS = "Freshman";
 
 }
