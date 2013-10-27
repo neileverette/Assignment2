@@ -10,6 +10,9 @@ public class Stanford extends ConsoleProgram{
 		
 		Frosh stud2 = new Frosh("Sam Smith", 1002);
 		
+		println(stud2.getName() + " has " + stud2.getUnits() + " units.");
+		
+		
 		println(stud.getName() + " has "+ stud.getUnits());
 		
 		println(stud.getName() + " can graduate " + stud.hasEnoughUnits());
