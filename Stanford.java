@@ -18,6 +18,8 @@ public class Stanford extends ConsoleProgram{
 		
 		println(stud.getName() + " can graduate " + stud.hasEnoughUnits());
 		
+		println(stud.getUnits());
+		
 		if (stud.hasEnoughUnits()){
 			println("Good times for " + stud.getName());
 		}
