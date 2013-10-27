@@ -9,6 +9,7 @@ public class Stanford extends ConsoleProgram{
 		stud.setUnits(179);
 		
 		Frosh stud2 = new Frosh("Sam Smith", 1002);
+		stud2.setUnits(179);
 		
 		println(stud2.getName() + " has " + stud2.getUnits() + " units.");
 		
