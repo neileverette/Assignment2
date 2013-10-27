@@ -14,7 +14,7 @@ public class Stanford extends ConsoleProgram{
 		
 		println(stud.getName() + " takes CS106A");
 		
-		stud.incrementUnits(-5);
+		stud.incrementUnits(5);
 		
 		println(stud.getName() + " can graduate " + stud.hasEnoughUnits());
 		
