@@ -8,6 +8,8 @@ public class Stanford extends ConsoleProgram{
 		Student stud = new Student("Ben Smith", 1001);
 		stud.setUnits(179);
 		
+		Frosh stud2 = new Frosh("Sam Smith");
+		
 		println(stud.getName() + " has "+ stud.getUnits());
 		
 		println(stud.getName() + " can graduate " + stud.hasEnoughUnits());
