@@ -10,7 +10,7 @@ public class RandomNumber extends ConsoleProgram {
 		int r = rgen.nextInt(5, 50);
 		int x = rgen.nextInt(0, getWidth()-2*r);
 		
-	while(x < 5){
+	while(x > 5){
 			println(x);
 			x = rgen.nextInt(0, getWidth()-2*r);
 		}
