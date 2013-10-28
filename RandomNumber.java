@@ -9,11 +9,11 @@ public class RandomNumber extends ConsoleProgram {
 		// Variables
 		double y = rgen.nextDouble(0, 10);
 		int r = rgen.nextInt(5, 50);
-		int x = rgen.nextInt(0, getWidth()-2*r);
+		int x = rgen.nextInt(0, 10);
 		
-	while(y > 0){
+	while(x > 0){
 			println(x);
-			y = rgen.nextDouble(0, 10);
+			x = rgen.nextInt(0, 10);
 		}
 		
 	}
